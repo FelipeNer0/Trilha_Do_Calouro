@@ -7,9 +7,9 @@ body {
     padding: 0;
 }
 
-/*body * {
+body * {
     box-sizing: border-box;
-}*/
+}
 
 header {
     background-color: #333;
@@ -67,8 +67,8 @@ footer{
     padding: 20px;
 }
 
-/* Tela de Login */
-/*
+/* Tela de Cadastro Ademar */
+
 #card{
     display: flex;
     justify-content: center;
@@ -116,7 +116,7 @@ input[type="submit"] {
 .register-link {
     text-align: center;
 }
-*/
+
 
 /*Tela login Felipe*/
 .main-login{
