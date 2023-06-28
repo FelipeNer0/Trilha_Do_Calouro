@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Trilha do Calouro</title>
-</head>
-<body>
-    <div id="card">
-        <div class="containerLogin">
-            <h2>Login</h2>
-            <form action="#" method="post">
-                <input type="submit" value="Entrar">
-            </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trilha do calouro</title>
+  </head>
+  <body>
+    <div class="main-login">
+      <div class="login-esq">
+        <div class="card-titulo">
+          <h1>TRILHA DO <br />CALOURO<br /></h1>
+          <img src="img/estudante.svg" class="esq-login-img" alt="estudante" />
         </div>
-
-        <div class="containerCadastro">
-            <h2>Cadastro</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <input type="password" name="password" placeholder="Senha" required>
-                <input type="submit" value="Cadastrar">
-            </form>
+      </div>
+      <div class="login-dir">
+        <div class="card-login">
+          <h1>LOGIN</h1>
+          <div class="textfield">
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" placeholder="Usuário" />
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Senha" />
+          </div>
+          <button class="btn-login">Login</button>
         </div>
+      </div>
     </div>
-    <div class="register-link">
-        <p>Ainda não possui uma conta? <a href="#">Registre-se</a></p>
-    </div>
-</body>
+  </body>
 </html>

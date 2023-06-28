@@ -1,8 +1,15 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/*body * {
+    box-sizing: border-box;
+}*/
 
 header {
     background-color: #333;
@@ -61,7 +68,7 @@ footer{
 }
 
 /* Tela de Login */
-
+/*
 #card{
     display: flex;
     justify-content: center;
@@ -108,4 +115,156 @@ input[type="submit"] {
 
 .register-link {
     text-align: center;
+}
+*/
+
+/*Tela login Felipe*/
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #D1CCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+}
+
+.login-esq{
+    width: 25vw;
+    height: 50vh;
+    display: flex;     
+}
+
+.card-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2F7F33;
+    border-radius: 20px 0px 0px 20px;  
+         
+}
+
+.card-titulo > h1{
+    font-size: 2vw;
+    color: #f0ffffde;   
+}
+
+.esq-login-img{
+    width: 20vw;    
+}
+
+.login-dir{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    float: right;
+       
+}
+
+.card-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #D9D9D9;
+    border-radius: 0px 20px 20px 0px;  
+    
+}
+
+.card-login > h1{
+    color: #2F7F33;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    background: #D1CCCC;
+    color: #f0ffffde;
+    font-size: 12pt;    
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #A7A5A5;    
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #A7A5A5;
+}
+
+.btn-login{
+    width: 50%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    background: #1B5E20;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+
+    .login-esq > h1{
+        display: none;
+    }
+
+    .login-esq{
+        width: 100%;
+        height: auto;
+    }  
+    
+    .login-dir{
+        width: 100%;
+        height: auto;
+    }
+
+    .esq-login-img{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 70%;
+        margin: auto;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .card-titulo{
+        width: 70%;
+        margin: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
 }
