@@ -10,24 +10,61 @@
     <div class="main-login">
       <div class="login-esq">
         <div class="card-titulo">
-          <h1>TRILHA DO <br />CALOURO<br /></h1>
-          <img src="img/estudante.svg" class="esq-login-img" alt="estudante" />
+          <img
+            src="img/TRILHA DO CALOURO.svg"
+            class="esq-login-img"
+            alt="estudante"
+          />
+          <h1>Bem-vindo, <br />calouro!<br /></h1>
+          <p>Ainda não possui cadastro? <br />faça sua conta agora mesmo!</p>
+          <button class="bnt-link-cadastrar" onclick="pagCadastrar()">
+            Criar conta
+          </button>
+          <a href="#">Esqueci minha senha.</a>
         </div>
       </div>
       <div class="login-dir">
         <div class="card-login">
           <h1>LOGIN</h1>
           <div class="textfield">
-            <label for="usuario">Usuário</label>
-            <input type="text" name="usuario" placeholder="Usuário" />
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" />
           </div>
           <div class="textfield">
             <label for="senha">Senha</label>
-            <input type="password" name="senha" placeholder="Senha" />
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha"
+            />
           </div>
-          <button class="btn-login">Login</button>
+          <button class="btn-login" onclick="logar()">Login</button>
+          <div class="linksMobile">
+            <a href="#">Esqueci minha senha.</a>
+            <p>Não possui conta?</p>
+            <a href="cadastro.html">Cadastra-se agora mesmo!</a>
+          </div>
         </div>
       </div>
     </div>
+
+    <!--teste de login-->
+    <script>
+      function logar() {
+        var login = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
+
+        if (login == "admin@teste.com" && senha == "admin") {
+          alert("Login realizado com sucesso!");
+        } else {
+          alert("Login ou senha incorretos!");
+        }
+      }
+
+      function pagCadastrar() {
+        window.location.href = "cadastro.html";
+      }
+    </script>
   </body>
 </html>
