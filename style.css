@@ -134,7 +134,7 @@ input[type="submit"] {
 
 .login-esq{
     width: 20vw;
-    height: 50vh;
+    height: 65vh;
     display: flex;     
 }
 
@@ -176,7 +176,7 @@ input[type="submit"] {
 
 .login-dir{
     width: 35vw;
-    height: 50vh;
+    height: 65vh;
     display: flex;
     float: right;
        
@@ -268,7 +268,7 @@ input[type="submit"] {
 @media only screen and (max-width: 950px) {
     .card-login{
         width: 100%;
-    }
+    }    
 
     .bnt-link-cadastrar{
         width: 90%;
