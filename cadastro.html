@@ -1,31 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Trilha do Calouro</title>
-</head>
-<body>
-    <div id="card">
-        <div class="containerLogin">
-            <h2>Login</h2>
-            <form action="#" method="post">
-                <input type="submit" value="Entrar">
-            </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trilha do calouro</title>
+  </head>
+  <body>
+    <div class="main-login">
+      <div class="login-esq">
+        <div class="card-titulo">
+          <img
+            src="img/TRILHA DO CALOURO.svg"
+            class="esq-login-img"
+            alt="estudante"
+          />
+          <h1>Bem-vindo, <br />calouro!<br /></h1>
+          <p>Acesse sua conta agora</br> mesmo:</p>
+          <button class="bnt-link-login" onclick="pagLogin()">
+            ENTRAR
+          </button>
+          <a href="#">Esqueci minha senha.</a>
         </div>
+      </div>
+      <div class="login-dir">
+        <div class="card-cadastro">
+          <h1>Crie sua conta</h1>
+          <p>Preencha seus dados:</p>
+          <div class="textfield">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required/>
+          </div>
+          <div class="textfield">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="usuario@email.com" required onblur="validaEmail()" />
+        </div>
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha"
+              required
+            />
+          </div>
+          <button class="bnt-cadastrar" onclick="cadastrar()">Cadastrar</button>
+          <div class="linksMobile">
+            <a href="#">Esqueci minha senha.</a>
+            <p>Já possui conta?</p>
+            <a href="index.html">Acesse sua conta agora mesmo!</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="containerCadastro">
-            <h2>Cadastro</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <input type="password" name="password" placeholder="Senha" required>
-                <input type="submit" value="Cadastrar">
-            </form>
-        </div>
-    </div>
-    <div class="register-link">
-        <p>Ainda não possui uma conta? <a href="#">Registre-se</a></p>
-    </div>
-</body>
+    <!--teste de login -->
+    <script>
+      function cadastrar() {
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
+
+        if (nome == "" || email == "" || senha == "") {
+          alert("Preencha todos os campos!");
+        } else {
+          alert("Cadastro realizado com sucesso!");
+          window.location.href = "index.html";
+        }
+      }
+
+      function pagLogin() {
+        window.location.href = "index.html";
+      }
+
+      function validaEmail() {
+        var email = document.getElementById("email").value;
+        if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+          alert("E-mail inválido");
+        }
+      }
+    </script>
+  </body>
 </html>
