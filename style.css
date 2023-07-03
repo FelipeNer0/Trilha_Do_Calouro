@@ -128,7 +128,8 @@ footer {
   width: 100vw;
   height: 100vh;
   /*background: linear-gradient(to bottom, #D1CCCC, #2F7F33);*/
-  background: #d1cccc;
+  background: url("img/fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,14 +152,15 @@ footer {
   justify-content: space-around;
   flex-direction: column;
   padding: 30px 35px;
-  background: #2f7f33;
-  border-radius: 20px 0px 0px 20px;
+  /*background: #2f7f33;*/
+  border: #ffffff 2px solid;
+  border-radius: 20px 0px 0px 20px;  
 }
 
 .card-titulo > h1 {
   font-size: 3vw;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;  
 }
 
 .card-titulo > p {
@@ -191,12 +193,13 @@ footer {
   align-items: center;
   flex-direction: column;
   padding: 30px 35px;
-  background: #d9d9d9;
+  /*background: #d9d9d9;*/
+  border: #ffffff 2px solid;
   border-radius: 0px 20px 20px 0px;
 }
 
 .card-login > h1 {
-  color: #339938;
+  color: #fff;
   font-weight: 800;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -216,7 +219,7 @@ footer {
   border: none;
   border-radius: 20px;
   padding: 15px;
-  background: #d1cccc;
+  background: #ffffff;
   color: #2f7f33;
   font-size: 12pt;
   outline: none;
@@ -224,7 +227,7 @@ footer {
 }
 
 .textfield > label {
-  color: #a7a5a5;
+  color: #fff;
   margin-bottom: 10px;
   font-size: 1.3vw;
 }
