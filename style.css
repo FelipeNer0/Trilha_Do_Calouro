@@ -10,6 +10,7 @@ body * {
   box-sizing: border-box;
 }
 
+/*Tela Inicial*/
 header {
   background-color: #333;
   color: #fff;
@@ -134,10 +135,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.linksMobile {
-  display: none;
 }
 
 .login-esq {
@@ -267,6 +264,11 @@ footer {
   cursor: pointer;
 }
 
+.linksMobile {
+  display: none;
+}
+
+
 @media only screen and (max-width: 950px) {
   .card-login {
     width: 85%;
@@ -290,25 +292,27 @@ footer {
     display: none;
   }
 
-  .bnt-link-cadastrar, .bnt-link-login {
+  .bnt-link-cadastrar,
+  .bnt-link-login {
     display: none;
   }
 
-  .login-esq, .login-dir {
+  .login-esq,
+  .login-dir {
     width: 100%;
     height: auto;
-  }  
+  }
 
   .esq-login-img {
     width: 40vw;
   }
 
-  .card-login, .card-cadastro {
+  .card-login,
+  .card-cadastro {
     width: 90%;
     margin: auto;
     border-radius: 0px 0px 20px 20px;
   }
-  
 
   .textfield > label {
     font-size: 5vw;
@@ -339,6 +343,4 @@ footer {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
   }
-
-  
 }
