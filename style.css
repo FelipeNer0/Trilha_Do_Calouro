@@ -127,8 +127,10 @@ footer {
 .main-login {
   width: 100vw;
   height: 100vh;
-  /*background: linear-gradient(to bottom, #D1CCCC, #2F7F33);*/
-  background: #d1cccc;
+  /*background: linear-gradient(to bottom, #D1CCCC, #2F7F33);
+  background: #d1cccc;*/
+  background: url("img/fundo-login.jpg") no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
